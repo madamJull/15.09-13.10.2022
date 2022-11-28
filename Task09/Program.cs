@@ -8,7 +8,9 @@ int num2 = num %10;
 Console.WriteLine($"Число {num}");
 if (num1 == num2)
     Console.WriteLine("Цифры числа равны ");
-else if(num1 > num2)
-    Console.WriteLine($"Максимальной цифрой числа является {num1}");
-else 
-    Console.WriteLine($"Максимальной цифрой числа является {num2}");
+// else if(num1 > num2)
+//     Console.WriteLine($"Максимальной цифрой числа является {num1}");
+// else 
+//     Console.WriteLine($"Максимальной цифрой числа является {num2}");
+//Способ 2. Тернарные операции
+Console.WriteLine(num1 > num2 ? $"Максимальной цифрой числа: {num1}" : $"Максимальной цифрой числа является {num2}");
