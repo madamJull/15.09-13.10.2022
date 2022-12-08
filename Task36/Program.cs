@@ -6,7 +6,7 @@ Console.Clear();
 Console.WriteLine("Введите размер массива: ");
 int size = Convert.ToInt32(Console.ReadLine());
 int[] array = new int[size];
-FillArrayRandomNumbers(array);
+FillArrayRnd(array);
 int sum = 0;
 
 Console.WriteLine($"Задан массив: [ {string.Join(", ", array)} ]");
@@ -16,7 +16,7 @@ for(int i = 0; i < array.Length; i += 2)
     
 Console.WriteLine($"Всего элементов в массиве {array.Length}, сумма элементов, стоящих на нечётных позициях составляет = {sum}");
 
-void FillArrayRandomNumbers(int[] array)
+void FillArrayRnd(int[] array)
 {
     var rnd = new Random();
     for(int i = 0; i < array.Length; i++)
