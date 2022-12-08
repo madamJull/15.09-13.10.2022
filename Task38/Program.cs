@@ -20,16 +20,17 @@ for (int i = 0; i < array.Length; i++)
         {
             min = array[i];
         }
+
 }
 
 Console.WriteLine($"Всего элементов в массиве {array.Length}. максимальным элементом массива является = {max}, минимальным элементом массива является = {min}");
-Console.WriteLine($"Разница между максимальным и минимальным значением массива составляет = {max - min}");
+Console.WriteLine($"Разница между максимальным и минимальным значением массива составляет = {(Math.Round(max - min,2,MidpointRounding.ToZero))}");
 
 void FillArrayRnd(double[] array)
 {
     var rnd = new Random();
     for(int i = 0; i < array.Length; i++)
         {
-            array[i] = Convert.ToDouble(rnd.Next(100,1000)) / 100;
+            array[i] = Convert.ToDouble(rnd.Next(100,1000)) / 100;            
         }
 }
