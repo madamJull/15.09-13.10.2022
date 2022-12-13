@@ -11,7 +11,7 @@ int sum = 0;
 
 Console.WriteLine($"Задан массив: [ {string.Join(", ", array)} ]");
 
-for(int i = 0; i < array.Length; i += 2)
+for(int i = 1; i < array.Length; i += 2)
     sum = sum + array[i];
     
 Console.WriteLine($"Всего элементов в массиве {array.Length}, сумма элементов, стоящих на нечётных позициях составляет = {sum}");
