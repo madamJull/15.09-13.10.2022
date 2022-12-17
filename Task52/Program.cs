@@ -18,7 +18,6 @@ FillArrayRandom(numbers);
 
 PrintArray(numbers);
 
-//  {(Math.Round(GetAvarage(numbers),1,MidpointRounding.ToZero))}; ");
 for (int j = 0; j < numbers.GetLength(1); j++)
 {
     double avarage = 0;
@@ -27,9 +26,8 @@ for (int j = 0; j < numbers.GetLength(1); j++)
         avarage = (avarage + numbers[i, j]);
     }
     avarage = avarage / n;
-    Console.Write($"Среднее арифметическое: {(Math.Round(avarage,1,MidpointRounding.ToZero))};  ");
+    Console.WriteLine($"Среднее арифметическое столбца с индексом {j}: {(Math.Round(avarage,1,MidpointRounding.ToZero))};  ");
 }
-Console.WriteLine();
 
 void FillArrayRandom(int[,] array)
 {
