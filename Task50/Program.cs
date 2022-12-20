@@ -20,7 +20,7 @@ FillArrayRandom(numbers);
 
 PrintArray(numbers);
 
-if (n > numbers.GetLength(0) || m > numbers.GetLength(1))
+if (n >= numbers.GetLength(0) || m >= numbers.GetLength(1))
 {
     Console.WriteLine("Элемента с данными индексами в массиве нет");
 }
